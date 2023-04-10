@@ -47,17 +47,18 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "ReactJS Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "UI/UX Designer",
     icon: backend,
   },
   {
-    title: "Content Creator",
+    title: "Content Writer",
     icon: creator,
   },
+  
 ];
 
 const technologies = [
@@ -72,10 +73,6 @@ const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",

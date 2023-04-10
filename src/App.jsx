@@ -10,8 +10,8 @@ const App =()=> {
         <Hero name="Tony"/>
       </div>
       <About/>
-        <Experience/>
-        <Works/>
+      <Experience/>
+      <Works/>
     <div className="relative z-0">
       <Contact/>
       <StarsCanvas/>
