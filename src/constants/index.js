@@ -13,8 +13,6 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
-    docker,
     meta,
     starbucks,
     tesla,
@@ -47,7 +45,7 @@ const services = [
     icon: web,
   },
   {
-    title: "ReactJS Developer",
+    title: "React Developer",
     icon: mobile,
   },
   {
@@ -101,15 +99,7 @@ const technologies = [
   {
     name: "git",
     icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  }
 ];
 
 const experiences = [
