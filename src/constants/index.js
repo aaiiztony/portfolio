@@ -186,67 +186,70 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Newzz",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Introducing 'Newzz' - the app that's perfect for when you're feeling dizzy or bored! With a constant stream of fresh and interesting news stories, you'll never have a chance to feel bored again. [WORK IN PROGRESS]",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "newsAPI",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "bootsrap",
         color: "pink-text-gradient",
       },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://aaiiztony.github.io/newzz/",
   },
   {
-    name: "Job IT",
+    name: "NoteUp",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Introducing the usual boring notes web app, but built on the MERN stack - the perfect solution for organizing and managing your notes online. So why don't you check it out? [WORK IN PROGRESS]",
     tags: [
+      {
+        name: "mongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "expressJS",
+        color: "green-text-gradient",
+      },
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
+        name: "node.js",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://aaiiztony.github.io/noteup/",
   },
   {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    name: "TicTacToe",
+    description:"Introducing TicTacToe - a super clean design game with a bit of childhood nostalgia, built entirely from scracth with HTML, CSS and Javascript",
     tags: [
       {
-        name: "nextjs",
+        name: "html",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "css",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "javascript",
         color: "pink-text-gradient",
       },
     ],
     image: tripguide,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://aaiiztony.github.io/tictactoe",
   },
 ];
 
