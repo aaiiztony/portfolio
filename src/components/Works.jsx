@@ -69,7 +69,7 @@ const Works = () => {
           Ideas that i've tried my hands on!
         </p>
         <h2 className={`${styles.sectionHeadText}`}>My Projects</h2>
-        <div className="flex flex-row flex-wrap gap-10 mb-5">
+        <div className="flex flex-row flex-wrap gap-10 mt-10">
           {projects.map((project, index) => (
             <ProjectCard
               {...project}
