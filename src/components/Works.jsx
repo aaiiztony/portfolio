@@ -62,13 +62,12 @@ const ProjectCard = ({
 };
 
 const Works = () => {
-  return (
-    <>
-      <motion.div variants={textVariant()}>
+      <motion.div 
+      variants={textVariant()}>
         <p className={`${styles.sectionSubText}`}>
           Ideas that i've tried my hands on!
         </p>
-        <h2 className={`${styles.sectionHeadText}`}>My Projects</h2>
+        <h2 className={`${styles.sectionHeadText}`}>Ongoing Projects</h2>
         <div className="flex flex-row flex-wrap gap-10 mt-10">
           {projects.map((project, index) => (
             <ProjectCard
@@ -79,8 +78,5 @@ const Works = () => {
           ))}
         </div>
       </motion.div>
-    </>
-  );
 };
-
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "work");

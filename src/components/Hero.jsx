@@ -1,8 +1,32 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import {motion} from "framer-motion";
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
+import MobileAlert from './MobileAlert';
 const Hero = (props) => {
+//ADD A SIMPLE 3D OBJECT IN MOBILEALERT
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(()=>{
+
+    //add a listener for mediaquery change detection 
+    const mediaQuery = window.matchMedia("(max-width:500px)")
+
+    //set initial value of 'isMobile' state variable
+    setIsMobile(mediaQuery.matches);
+
+    //callback function to handle changes to the media query
+    const handleMediaQueryChange = (e)=>{
+      setIsMobile(e.matches);
+    }
+
+    //add callback function as a listener for changes to the media query 
+    mediaQuery.addEventListener("change", handleMediaQueryChange);
+
+    //remove the listener when the component is unmounted
+    return()=>{
+      mediaQuery.removeEventListener('change', handleMediaQueryChange)
+    }
+  }, [])
   return (
     <section className='relative w-full h-screen mx-auto'>
       <div className={`${styles.paddingX} absolute inset-0 top-[70px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -15,7 +39,7 @@ const Hero = (props) => {
         <p className={`${styles.heroSubText} mt-2 text-white-100`}>Designing and developing <br className='sm:hidden block'/>web apps that feel alive!</p>
         </div>
       </div>
-      <ComputersCanvas/>
+      {isMobile?<MobileAlert/>:<ComputersCanvas/>}
       <div className="mt-4 absolute xs:bottom-5 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">

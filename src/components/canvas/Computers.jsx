@@ -2,6 +2,7 @@ import { OrbitControls, Preload, SpotLight, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import React, { Suspense, useEffect, useState } from 'react'
 import CanvasLoader from "../Loader"
+import MobileAlert from '../MobileAlert'
 
 const Computers = ({isMobile}) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
@@ -18,7 +19,7 @@ const Computers = ({isMobile}) => {
       penumbra={1}
       castShadow
       shadow-mapSize={1024}
-      />
+      /> 
       <pointLight
       intensity={1}
       />
@@ -55,7 +56,6 @@ const ComputersCanvas= ()=>{
       mediaQuery.removeEventListener('change', handleMediaQueryChange)
     }
   }, [])
-
   return (
     <Canvas 
     frameloop='demand'
