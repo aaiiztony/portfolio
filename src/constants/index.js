@@ -12,15 +12,14 @@ import {
     tailwind,
     nodejs,
     mongodb,
+    noteup,
     git,
     meta,
     starbucks,
     tesla,
     shopify,
-    carrent,
-    jobit,
-    tripguide,
-    
+    tictactoe,
+    cryptomanya,
   threejs,
 } from "../assets";
 
@@ -71,10 +70,6 @@ const technologies = [
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
   },
   {
     name: "Three JS",
@@ -170,24 +165,24 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Newzz",
+    name: "Cryptomanya",
     description:
-      "Introducing 'Newzz' - the app that's perfect for when you're feeling dizzy or bored! With a constant stream of fresh and interesting news stories, you'll never have a chance to feel bored again. [WORK IN PROGRESS]",
+      "Introducing 'Cryptomanya' - A crypto coin web app that lets you stay updated with crypto coin stats all over the globe. [WORK IN PROGRESS]",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "newsAPI",
+        name: "coinRankingAPI",
         color: "green-text-gradient",
       },
       {
-        name: "bootsrap",
+        name: "bingeNewsApi",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: cryptomanya,
     source_code_link: "https://aaiiztony.github.io/newzz/",
   },
   {
@@ -212,7 +207,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: noteup,
     source_code_link: "https://aaiiztony.github.io/noteup/",
   },
   {
@@ -232,7 +227,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: tictactoe,
     source_code_link: "https://aaiiztony.github.io/tictactoe",
   },
 ];

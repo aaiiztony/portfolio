@@ -16,7 +16,7 @@ const ProjectCard = ({
   source_code_link,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div variants={fadeIn("up", "spring", index*0.5, 0.75)}>
       <Tilt
         options={{
           max: 45,
@@ -43,40 +43,41 @@ const ProjectCard = ({
               />
             </div>
           </div>
-          </div>
-          <div/>
-          <div className="mt-5">
-            <h3 className="text-white font-bold text-[24px]">{name}</h3>
-            <p className="mt-2 text-secondary text-[14px]">{description}</p>
-          </div>
-          <div className="mt-4 flex flex-wrap gap-2">
-            {tags.map((tag, index) => (
-              <p key={`tag-${index}`} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
-          </div>
+        </div>
+        <div />
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag, index) => (
+            <p key={`tag-${index}`} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
+        </div>
       </Tilt>
     </motion.div>
   );
 };
 
-const Works = () => {
-      <motion.div 
-      variants={textVariant()}>
-        <p className={`${styles.sectionSubText}`}>
-          Ideas that i've tried my hands on!
-        </p>
-        <h2 className={`${styles.sectionHeadText}`}>Ongoing Projects</h2>
-        <div className="flex flex-row flex-wrap gap-10 mt-10">
-          {projects.map((project, index) => (
-            <ProjectCard
-              {...project}
-              index={index}
-              key={`project-${project.name}`}
-            />
-          ))}
-        </div>
-      </motion.div>
+const Works = () => { 
+  return(
+  <motion.div variants={textVariant()}>
+    <p className={`${styles.sectionSubText}`}>
+      Ideas that i've tried my hands on!
+    </p>
+    <h2 className={`${styles.sectionHeadText}`}>Ongoing Projects</h2>
+    <div className="flex flex-row flex-wrap gap-10 mt-10">
+      {projects.map((project, index) => (
+        <ProjectCard
+          {...project}
+          index={index}
+          key={`project-${project.name}`}
+        />
+      ))}
+    </div>
+  </motion.div>
+)
 };
 export default SectionWrapper(Works, "work");

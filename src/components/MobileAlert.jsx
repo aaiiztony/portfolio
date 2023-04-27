@@ -2,8 +2,10 @@ import React from 'react'
 
 const MobileAlert = () => {
   return (
-    <div className='h-full flex justify-center items-center'>
-        <h2>Well, do have a look with your desktop!</h2>
+    <div className='h-full flex justify-center items-center mx-10'>
+        <h2>For best experience, either
+          <br />
+          Turn on desktop mode or<br /> Switch to a laptop!</h2>
     </div>
   )
 }
