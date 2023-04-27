@@ -3,10 +3,7 @@ import {
     backend,
     creator,
     web,
-    javascript,
-    typescript,
-    html,
-    css,
+    newzz,
     reactjs,
     redux,
     tailwind,
@@ -165,6 +162,27 @@ const testimonials = [
 
 const projects = [
   {
+    name: "Newzz",
+    description:
+      "Introducing 'Newzz' - A news web app that lets you stay updated with modern day news all over the globe categorised according to your taste [WORK IN PROGRESS]",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react-router",
+        color: "green-text-gradient",
+      },
+      {
+        name: "newsApi",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: newzz,
+    source_code_link: "https://newzz.netlify.app",
+  },
+  {
     name: "Cryptomanya",
     description:
       "Introducing 'Cryptomanya' - A crypto coin web app that lets you stay updated with crypto coin stats all over the globe. [WORK IN PROGRESS]",
@@ -183,7 +201,7 @@ const projects = [
       },
     ],
     image: cryptomanya,
-    source_code_link: "https://aaiiztony.github.io/newzz/",
+    source_code_link: "https://cryptomanya.netlify.app",
   },
   {
     name: "NoteUp",
