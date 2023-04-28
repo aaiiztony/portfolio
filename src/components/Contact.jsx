@@ -1,10 +1,11 @@
-import { motion } from 'framer-motion'
-import React, { useRef, useState } from 'react'
-import { styles } from '../styles'
-import { EarthCanvas } from './canvas'
-import { slideIn } from '../utils/motion'
-import { SectionWrapper } from '../hoc'
-import emailjs from '@emailjs/browser'
+import { motion } from 'framer-motion';
+import React, { useRef, useState } from 'react';
+import { styles } from '../styles';
+import { EarthCanvas } from './canvas';
+import { slideIn } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
+import emailjs from '@emailjs/browser';
+
 const Contact = () => {
   const [form, setForm] = useState({
     name:"",
@@ -24,13 +25,13 @@ const Contact = () => {
   const handleSubmit=(e)=>{
     e.preventDefault();
     setLoading(true);
-    emailjs.send('service_19ynrxi', 'template_9iobr2t',{
+    emailjs.send(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY ,{
       from_name: form.name,
       to_name:"Tony-Portfolio",
       from_email: form.email,
       to_email: "sdj3508@gmail.com",
       message: form.message,
-    }, "sLsHo9mH3gnRcjmNr")
+    }, import.meta.env.VITE_EMAILJS_API_KEY)
     .then(() => {
       setLoading(false);
       alert("Thanks, I'll get back soon!");
