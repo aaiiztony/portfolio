@@ -3,7 +3,7 @@ import {
     backend,
     creator,
     web,
-    newzz,
+    taskify,
     reactjs,
     redux,
     tailwind,
@@ -162,27 +162,6 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Newzz",
-    description:
-      "Introducing 'Newzz' - A news web app that lets you stay updated with modern day news all over the globe categorised according to your taste [WORK IN PROGRESS]",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react-router",
-        color: "green-text-gradient",
-      },
-      {
-        name: "newsApi",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: newzz,
-    source_code_link: "https://newzz.netlify.app",
-  },
-  {
     name: "Cryptomanya",
     description:
       "Introducing 'Cryptomanya' - A crypto coin web app that lets you stay updated with crypto coin stats all over the globe. [WORK IN PROGRESS]",
@@ -227,6 +206,27 @@ const projects = [
     ],
     image: noteup,
     source_code_link: "https://aaiiztony.github.io/noteup/",
+  },
+  {
+    name: "Taskify",
+    description:
+      "A super clean and simple task manager app with CRUD functionalities that stores your data in localstorage for future reference.",
+    tags: [
+      {
+        name: "htmnl",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "css",
+        color: "green-text-gradient",
+      },
+      {
+        name: "vanillaJS",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: taskify,
+    source_code_link: "https://aaiiztony.github.io/taskify",
   },
   {
     name: "TicTacToe",

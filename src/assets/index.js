@@ -29,7 +29,7 @@ import tesla from "./company/tesla.png";
 import tictactoe from "./tictactoe.png";
 import noteup from "./noteup.png";
 import cryptomanya from "./cryptomanya.png";
-import newzz from "./newzz.png";
+import taskify from "./taskify.png";
 
 export {
   logo,
