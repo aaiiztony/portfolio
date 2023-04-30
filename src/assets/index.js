@@ -60,5 +60,5 @@ export {
   tictactoe,
   noteup,
   cryptomanya,
-  newzz,
+  taskify,
 };
