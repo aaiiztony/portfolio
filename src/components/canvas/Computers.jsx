@@ -58,6 +58,7 @@ const ComputersCanvas= ()=>{
   }, [])
   return (
     <Canvas 
+    className='absolute z-[2]'
     frameloop='demand'
     shadows
     dpr={[1,2]}
