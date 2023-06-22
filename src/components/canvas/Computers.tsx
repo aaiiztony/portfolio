@@ -4,7 +4,7 @@ import React, { Suspense, useEffect, useState } from 'react'
 import CanvasLoader from "../Loader"
 import MobileAlert from '../MobileAlert'
 
-const Computers = ({isMobile}) => {
+const Computers = ({isMobile}:{isMobile:boolean}) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
   return (
     <mesh>
@@ -44,7 +44,7 @@ const ComputersCanvas= ()=>{
     setIsMobile(mediaQuery.matches);
 
     //callback function to handle changes to the media query
-    const handleMediaQueryChange = (e)=>{
+    const handleMediaQueryChange = (e:MediaQueryListEvent)=>{
       setIsMobile(e.matches);
     }
 

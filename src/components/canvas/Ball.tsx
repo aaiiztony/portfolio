@@ -9,8 +9,8 @@ import {
 import { Canvas } from '@react-three/fiber';
 import CanvasLoader from '../Loader';
 
-const Ball = (props) => { 
-  const [decal] = useTexture([props.imgUrl])
+const Ball = ({imgUrl}:{imgUrl:string}) => { 
+  const [decal] = useTexture([imgUrl])
   return (
     <Float
   speed={2.5} // Animation speed, defaults to 1
@@ -45,7 +45,7 @@ const Ball = (props) => {
   )
 }
 
-const BallCanvas = ({icon}) => {
+const BallCanvas = ({icon}:{icon:string}) => {
   return (
     <Canvas
     frameloop='always'

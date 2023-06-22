@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
 import { github } from "../assets";
+import { ProjectCardProps } from "../../types";
 
 const ProjectCard = ({
   index,
@@ -14,7 +15,7 @@ const ProjectCard = ({
   tags,
   image,
   source_code_link,
-}) => {
+}: ProjectCardProps) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index*0.5, 0.75)}>
       <Tilt
@@ -23,7 +24,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-tertiary p-5 rounded-2xl sm:w-[351px] w-full"
       >
         <div className="relative w-full h-[230px]">
           <img

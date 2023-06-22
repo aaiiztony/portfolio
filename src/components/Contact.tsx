@@ -12,9 +12,9 @@ const Contact = () => {
     message:"",
     email:"",
   })
-  const formRef = useRef();
+  const formRef = useRef(null);
   const [loading, setLoading] = useState(false);
-  const handleChange=(e)=>{
+  const handleChange=(e:React.ChangeEvent<HTMLInputElement>|React.ChangeEvent<HTMLTextAreaElement>)=>{
     const {target} = e;
     const {name, value} = target;
     setForm({
@@ -22,7 +22,7 @@ const Contact = () => {
       [name]:value,
     })
   }
-  const handleSubmit=(e)=>{
+  const handleSubmit=(e:React.FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
     setLoading(true);
     emailjs.send(import.meta.env.VITE_SERVICE_KEY, import.meta.env.VITE_TEMPLATE_KEY ,{

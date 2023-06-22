@@ -37,7 +37,7 @@ const ExperienceCard = ({experience}) => {
         </p>
       </div>
       <ul  className='mt-5 list-disc ml-5 space-y-2'>
-        {experience.points.map((points, index)=>(
+        {experience.points.map((points:string[], index:number)=>(
           <li
           key={`experience-point-${index}`} 
           className='text-white-100 text-[14px] pl-1 tracking-wider'>
@@ -54,7 +54,7 @@ const Experience = () => {
   return (
     <>
     <motion.div
-    variants={textVariant}>
+    variants={textVariant()}>
       <p className={`${styles.sectionSubText}`}>What went till now?</p>
       <h2 className={`${styles.sectionHeadText}`}>Work Experience</h2>
     </motion.div>

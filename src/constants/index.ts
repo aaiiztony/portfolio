@@ -1,3 +1,4 @@
+import { ExperienceCardProps, NavLinkProps, ProjectProps, ServiceProps, TestimonialProps } from "../../types";
 import {
     mobile,
     backend,
@@ -20,7 +21,7 @@ import {
   threejs,
 } from "../assets";
 
-export const navLinks = [
+export const navLinks :NavLinkProps[] = [
   {
     id: "about",
     title: "About",
@@ -35,7 +36,7 @@ export const navLinks = [
   },
 ];
 
-const services = [
+const services :ServiceProps[] = [
   {
     title: "Web Developer",
     icon: web,
@@ -55,7 +56,7 @@ const services = [
   
 ];
 
-const technologies = [
+const technologies :{icon:string ; name:string}[] = [
   {
     name: "Redux Toolkit",
     icon: redux,
@@ -78,7 +79,7 @@ const technologies = [
   }
 ];
 
-const experiences = [
+const experiences : ExperienceCardProps[] = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
@@ -133,7 +134,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+const testimonials :TestimonialProps[]= [
   {
     testimonial:
       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
@@ -160,7 +161,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const projects:ProjectProps[]= [
   {
     name: "Cryptomanya",
     description:
@@ -185,7 +186,7 @@ const projects = [
   {
     name: "NoteUp",
     description:
-      "Introducing the usual boring notes web app, but built on the MERN stack - the perfect solution for organizing and managing your notes online. So why don't you check it out? [WORK IN PROGRESS]",
+      "Introducing Noteup, built on the MERN stack - the perfect solution for organizing and managing your notes online. So why don't you check it out? [WORK IN PROGRESS]",
     tags: [
       {
         name: "mongoDB",

@@ -1,8 +1,10 @@
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { staggerContainer } from '../utils/motion'
+import React from 'react'
+
 // we create the span to make sure when the scroll gif is clicked, it takes us to the span element (with a forced whitespace) in the about section. || The idName is populated from the component (first: about)
-const SectionWrapper = (Component, idName) => 
+const SectionWrapper = (Component:()=> JSX.Element, idName:string) => 
     function HOC() {
         return(
             <motion.section

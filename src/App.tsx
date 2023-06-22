@@ -1,7 +1,6 @@
+import React from "react"
 import { BrowserRouter } from "react-router-dom"
 import {Navbar, About, Contact, Experience, Hero, Works, StarsCanvas, Tech, Feedbacks} from "./components"
-
-//add a name writer aniomation that chnages the name automatically
 
 const App =()=> {
   return (
