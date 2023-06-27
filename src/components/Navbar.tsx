@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav
       className={`${styles.paddingX} w-full h-[50px] flex items-center fixed top-0 z-20 ${scrolled?"bg-primary":"bg-transparent"}`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center max-w-7xl mx-auto ">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -37,9 +37,9 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="w-14 h-14 object-contain" />
           <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Tony&nbsp;<span className="sm:block hidden">
+            Tony&nbsp;<span className="sm:block hidden text-white">
             | PG</span>
           </p>
         </Link>
@@ -49,7 +49,7 @@ const Navbar = () => {
               key={link.id}
               className={`${
                 active === link.title 
-                ? "text-white" 
+                ? "text-white"
                 : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={()=>{
@@ -65,12 +65,14 @@ const Navbar = () => {
           ))}
         </ul>
         <div className="sm:hidden flex flex-1 justify-end items-center">
+          <div className={`${scrolled?"bg-transparent":"bg-secondary"} p-1 rounded-md`}>
           <img
           src={toggle?close:menu}
           alt="menu"
           className="w-[28px] h-[28px] cursor-pointer object-contain"
           onClick={()=>setToggle(!toggle)}
           />
+          </div>
         <div className={`${!toggle?"hidden":"flex"} p-6 black-gradient absolute top-10 right-0 my-2 min-w-[140px] z-10 rounded-xl`}>
         <ul className="list-none flex justify-end items-start flex-col gap-3">
           {navLinks.map((link) => (

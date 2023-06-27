@@ -18,7 +18,7 @@ const About = () => {
     <motion.p
     variants={fadeIn("","", 0.1,1)}
     className="mt-5 text-secondary text-[17px] max-w-3xl leading-[30px]">
-      I'm a self-taught developer with experience in working with frameworks such as ReactJS, Node.js and ThreeJS. The journey started from discovering python libraries to learning frontend development and here i am, producing websites that are alive and running on my way towards the path to Full Stack Development.
+      I'm a self taught developer with experience in working with frameworks such as NextJS, React, Tailwind, ExpressJS, NodeJS, etc. On my way to become a Full Stack Developer.
     </motion.p>
     <div className="mt-20 flex flex-wrap sm:justify-normal justify-center gap-10">
       {services.map((service, index)=>(

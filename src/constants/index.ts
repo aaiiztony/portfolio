@@ -23,16 +23,16 @@ import {
 
 export const navLinks :NavLinkProps[] = [
   {
-    id: "about",
-    title: "About",
+    id: "contact",
+    title: "Contact",
   },
   {
     id: "work",
     title: "Work",
   },
   {
-    id: "contact",
-    title: "Contact",
+    id: "about",
+    title: "About",
   },
 ];
 
